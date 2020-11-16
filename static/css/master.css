@@ -1,3 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: lightgray;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.header_nav {
+    background-color: #bbb;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav_links {
+    padding: 0 10px 0 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub_nav {
+    background-color: #eee;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* projects div design prototype */
+h1 {
+    color: white;
+}
+
+.project1 {
+    background-color: #222;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project2 {
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project3 {
+    background-color: #444;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project4 {
+    background-color: #555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project5 {
+    background-color: #666;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer design */
+footer {
+    background-color: #fff;
+    text-align: center;
 }
