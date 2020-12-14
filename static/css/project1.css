@@ -1,0 +1,129 @@
+/* Author: Samit_08
+Project_name: 'Neon Buttons'
+Publish_date:  */
+
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/* base css */
+.project1_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    background-color: #050801;
+}
+
+.project1_neon_button {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    font-style: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #000005);
+}
+
+.project1_neon_button:nth-child(1) {
+    filter: hue-rotate(290deg);
+}
+
+.project1_neon_button:nth-child(3) {
+    filter: hue-rotate(150deg);
+}
+
+.project1_neon_button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.project1_neon_button span {
+    position: absolute;
+    display: block
+}
+
+.project1_neon_button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animation1 1s linear infinite;
+}
+
+.project1_neon_button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animation2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.project1_neon_button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animation3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+.project1_neon_button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animation4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+/* animations */
+@keyframes animation1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+@keyframes animation4 {
+    0% {
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
